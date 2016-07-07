@@ -14,7 +14,8 @@ Pod::Spec.new do |s|
   s.subspec 'MobClickInOne' do |mob|
     mob.vendored_frameworks = "MobClickInOne.framework"
     mob.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/UMengDPlus/"' }
-    mob.framework = 'CoreTelephony', 'Security'
+    mob.framework = 'CoreTelephony'
+    mob.libraries = 'libz.tbd', 'libsqlite.tbd'
     mob.requires_arc = false
   end
   s.subspec 'UTDID' do |utdid|
