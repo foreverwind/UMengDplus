@@ -12,8 +12,7 @@ Pod::Spec.new do |s|
   }
   
   s.subspec 'MobClickInOne' do |mob|
-    mob.preserve_paths = "umsdk_IOS_analyics_idfa_v4.0.4/MobClickInOne.framework/*"
-    mob.vendored_frameworks = 'MobClickInOne.framework'
+    mob.vendored_frameworks = "umsdk_IOS_analyics_idfa_v4.0.4/MobClickInOne.framework"
     mob.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/UMengDPlus/MobClickInOne"' }
     mob.framework = 'CoreTelephony', 'Security'
     mob.requires_arc = false
