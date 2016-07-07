@@ -8,11 +8,11 @@ Pod::Spec.new do |s|
   s.platform      = :ios, '7.0'
   s.license = 'MIT'
   s.source        = {
-    :http => 'https://raw.githubusercontent.com/foreverwind/UMengDplus/master/umsdk_IOS_analyics_idfa_v4.0.4.zip',
+    :git => 'https://github.com/foreverwind/UMengDplus.git',
   }
   
   s.subspec 'MobClickInOne' do |mob|
-    mob.vendored_frameworks = "umsdk_IOS_analyics_idfa_v4.0.4/MobClickInOne.framework"
+    mob.vendored_frameworks = "MobClickInOne.framework"
     mob.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/UMengDPlus/MobClickInOne"' }
     mob.framework = 'CoreTelephony', 'Security'
     mob.requires_arc = false
