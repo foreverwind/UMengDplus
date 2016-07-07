@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.source        = {
     :http => 'https://raw.githubusercontent.com/foreverwind/UMengDplus/master/umsdk_IOS_analyics_idfa_v4.0.4.zip',
   }
+  s.preserve_paths = "umsdk_IOS_analyics_idfa_v4.0.4/*"
   s.subspec 'MobClickInOne' do |mob|
     mob.vendored_frameworks = 'MobClickInOne.framework/*'
     mob.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/UMengDPlus/MobClickInOne"' }
