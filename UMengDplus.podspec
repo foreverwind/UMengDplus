@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = 'UMengDplus'
-  s.version       = '4.0.8'
+  s.version       = '4.0.8.100'
   s.summary       = 'UMengDplus framework'
   s.homepage      = 'https://github.com/foreverwind/UMengDplus'
   s.author        = { 'foreverwind' => 'foreverwind229@qq.com' }
@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.license = 'MIT'
   s.source        = {
     :git => 'https://github.com/foreverwind/UMengDplus.git',
+    :tag => s.version
   }
   
   s.subspec 'MobClickInOne' do |mob|
